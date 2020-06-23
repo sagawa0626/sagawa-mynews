@@ -35,7 +35,6 @@ class ProfileController extends Controller
     
     public function edit(Request $request)
     {
-      
       $profiles = Profile::find($request->id);
       return view('admin.profile.edit', ['profiles_form'=> $profiles]);
     }
