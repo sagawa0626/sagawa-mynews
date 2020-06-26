@@ -2,6 +2,7 @@
 @section('title', 'ニューストピックス')
 
 @section('content')
+<h1>世の中を驚かしている超最新記事一覧</h1>
     <div class="container">
         <hr color="#c0c0c0">
         @if (!is_null($headline))
