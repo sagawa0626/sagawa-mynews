@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace News;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,6 +17,6 @@ class Profile extends Model
     
     public function profile_histories()
     {
-        return $this->hasMany('App\ProfileHistory');
+        return $this->hasMany('News\ProfileHistory');
     }
 }

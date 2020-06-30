@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace News\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Profile;
-use App\ProfileHistory;
+use News\Http\Controllers\Controller;
+use News\Profile;
+use News\ProfileHistory;
 use Carbon\carbon;
 
 class ProfileController extends Controller

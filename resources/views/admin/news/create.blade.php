@@ -10,12 +10,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>ニュース新規作成</h2>
+                <h1>ニュース新規作成</h1>
                 <form action="{{ action('Admin\NewsController@create') }}" method="post" enctype="multipart/form-data">
                     
+                    <!--タイトル、本文に未入力があったらの設定-->
+                    <!--もしエラーの個数が０以上だったら-->
                     @if (count($errors) > 0)
                     <ul>
+                        <!--その全ての個数を取得し$eに代入する-->
                         @foreach($errors->all() as $e)
+                        <!--validationが反応し、validation.phpで定義したコメントが表示される-->
                         <li>{{ $e }}</li>
                         @endforeach
                     </ul>

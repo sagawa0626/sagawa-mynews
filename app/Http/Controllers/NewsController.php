@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace News\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\support\Facades\HTML;
 
 //追記
-use App\News;
+use News\News;
 
 class NewsController extends Controller
 {

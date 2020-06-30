@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace News\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Profile;
+use News\Profile;
 
 class ProfileController extends Controller
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace News;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -15,6 +15,6 @@ class News extends Model
     //Newsモデルに関連付けを行う
     public function histories()
     {
-        return $this->hasMany('App\History');
+        return $this->hasMany('News\History');
     }
 }

@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//　ユーザーから/admin/〜/〜のアクセスが来たら
+//　Controllerの@〜に渡すという指示を送っている
+//　'prefix' => 'admin'はhttp://XXXXXX.jp/admin/から始まるURL
+//　groupで囲うと全てがhttp://XXXXXX.jp/admin/から始まるURLが
+//　適応されるようになる。逆にadminから始まるURLでないなら勿論適応されない
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('news/create', 'Admin\NewsController@add');
     Route::post('news/create', 'Admin\NewsController@create');
