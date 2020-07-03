@@ -64,7 +64,7 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-10 offset-md-4">
-                                    <a href="http://c3ff2723bbee486bb55be239f0160887.vfs.cloud9.us-east-2.amazonaws.com/register">新規登録はコチラ</a>
+                                    <a href="https://frozen-forest-08120.herokuapp.com/register">新規登録はコチラ</a>
                                 </div>
                             </div>
                         </form>
