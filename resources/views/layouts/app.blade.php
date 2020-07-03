@@ -33,7 +33,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('NewsCreate') }}">ニュースを投稿する</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('NewsIndex') }}">ニュースを編集する</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('ProfileCreate') }}">プロフィールを作る</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('ProfileIndex') }}">プロフィールを編集する</a>
+                        </li>
+                            
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -41,11 +53,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('messages.Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('messages.Register') }}</a>
                                 </li>
                             @endif
                         @else

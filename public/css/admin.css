@@ -12,6 +12,7 @@ body {
 
 .navbar-brand {
   color: #fff !important;
+  list-style: none;
 }
 
 .nav-link {
