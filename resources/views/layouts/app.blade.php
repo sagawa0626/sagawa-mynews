@@ -37,15 +37,8 @@
                             <a class="nav-link" href="{{ route('NewsCreate') }}">ニュースを投稿する</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('NewsIndex') }}">ニュースを編集する</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('ProfileCreate') }}">プロフィールを作る</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('ProfileIndex') }}">プロフィールを編集する</a>
-                        </li>
-                            
                     </ul>
 
                     <!-- Right Side Of Navbar -->

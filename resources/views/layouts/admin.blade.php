@@ -47,10 +47,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!--Left Side Of Navber-->
-            <ul class="navber-nav mr-auto">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                    <a class="nav-link" href="{{ route('NewsCreate') }}">ニュースを投稿する</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="{{ route('ProfileCreate') }}">プロフィールを作る</a>
+              </li>
             </ul>
             <!--Right Side Of Navber-->
-            <ul class="navber-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
               <!-- Authentication Links -->
                         {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
                         @guest
