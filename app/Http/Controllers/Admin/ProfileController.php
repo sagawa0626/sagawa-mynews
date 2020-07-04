@@ -60,7 +60,7 @@ class ProfileController extends Controller
         $cond_title = $request->cond_title;
         if ($cond_title != '') {
             // 検索されたら検索結果を取得する
-            $posts = Profile::where('title', $cond_title)->get();
+            $posts = Profile::where('title', 'like', '%'.$cond_title.'%')->get();
         } else {
             // それ以外はすべてのプロフィールを取得する
             $posts = Profile::all();

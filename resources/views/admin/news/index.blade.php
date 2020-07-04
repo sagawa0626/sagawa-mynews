@@ -28,7 +28,7 @@
         <div class="row">
             <div class="admin-news col-md-12 mx-auto">
                 <div class="row">
-                    <table class="table table-dark">
+                    <table class="table table-hover">
                         <thead>
                             <tr>
                                 <th width="5%">ID</th>
